@@ -1,0 +1,240 @@
+/* Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ---------------------------------- */
+/* global */
+
+/* Fonts */
+@font-face {
+    font-family: VariableFont;
+    src: url(../assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
+}
+
+:root {
+    /* ## Colors */
+
+    /* ### Primary */
+
+    --Red: hsl(1, 90%, 64%);
+    --Blue: hsl(219, 85%, 26%);
+
+    /* ### Neutral */
+
+    --White: hsl(0, 0%, 100%);
+    --Very-light-grayish-blue: hsl(210, 60%, 98%);
+    --Light-grayish-blue-1: hsl(211, 68%, 94%);
+    --Light-grayish-blue-2: hsl(205, 33%, 90%);
+    --Grayish-blue: hsl(219, 14%, 63%);
+    --Dark-grayish-blue: hsl(219, 12%, 42%);
+    --Very-dark-blue: hsl(224, 21%, 14%);
+}
+
+body {
+    font-family: VariableFont;
+    background-color: var(--Very-light-grayish-blue);
+}
+
+/* ------------------------------ */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+}
+.container .card {
+    background-color: var(--White);
+    padding: 20px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+.container .card .texts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container .card .texts h1 {
+    color: var(--Very-dark-blue);
+}
+.container .card .texts span {
+    background-color: var(--Blue);
+    padding: 5px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    color: #fff;
+    font-size: 22px;
+    margin-left: 10px;
+}
+.container .card .texts p {
+    color: var(--Dark-grayish-blue);
+    cursor: pointer;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.container .card .texts p:hover {
+    color: var(--Blue);
+    font-weight: 900;
+}
+
+.notifications {
+    padding: 10px;
+}
+.notifications .cardNot {
+    display: flex;
+    background-color: hsla(219, 85%, 26%, 0.144);
+    padding: 15px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    flex-wrap: nowrap;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.notifications .cardNot  img {
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+}
+
+.notifications .cardNot  #Name {
+    color: var(--Very-dark-blue);
+    cursor: pointer;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.notifications .cardNot  #Name:hover {
+    color: var(--Blue);
+    font-weight: 900;
+}
+.notifications .cardNot  h3 {
+    color: hsla(224, 21%, 14%, 0.699);
+    font-size: 17px;
+    margin-top: 10px;
+    margin-left: 9px;
+    margin-right: 5px;
+}
+.notifications .cardNot h3 p {
+    color: var(--Dark-grayish-blue);
+    font-weight: 500;
+    margin-top: 4px;
+
+}
+.notifications .cardNot  #line {
+    color: var(--Dark-grayish-blue);
+    font-weight: 900;
+    cursor: pointer;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.notifications .cardNot  #line:hover {
+    color: var(--Blue);
+}
+.notifications .cardNot #div {
+    background-color: var(--Red);
+    height: 10px;
+    width:  10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-top: 17px;
+    margin-left: 2px;
+}
+#chess {
+    color: hsla(219, 85%, 26%, 0.801);
+    font-weight: 900;
+    cursor: pointer;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+#chess:hover {
+    color: var(--Blue);
+}
+
+.divMess {
+    border: 1px solid var(--Grayish-blue);
+    padding: 10px;
+    color: var(--Dark-grayish-blue);
+    margin-top: 2%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.divMess:hover {
+    background-color: var(--White);
+}
+.img {
+    position: absolute;
+    left: 77%;
+    cursor: pointer;
+    transition: 0.5s ;
+    -webkit-transition: 0.5s ;
+    -moz-transition: 0.5s ;
+    -ms-transition: 0.5s ;
+    -o-transition: 0.5s ;
+}
+.img:hover {
+    border: 1px solid var(--Blue);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+@media screen and (max-width: 423px) {
+        .notifications {
+            width: 100%;
+        }
+        .container .card .texts h1 {
+            color: var(--Very-dark-blue);
+            font-size: 20px;
+        }
+        .container .card .texts span {
+            font-size: 17px;
+            margin-left: 2px;
+        }        
+        .notifications .cardNot {
+            padding: 2px;
+            margin-top: 10px;
+            margin-left: -25px;
+            width: 119%;
+        }
+}
